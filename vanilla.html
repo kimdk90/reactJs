@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    vanilla javascript
+    <span id="span">Total click : 0</span>
+    <button id ="btn">click Me</button>
+    <button onclick=clickbtn()>click you</button>
+    <script>
+        const btn = document.querySelector("#btn");
+        const span = document.querySelector("#span");
+        let chkval = 0;
+        btn.addEventListener('click', () => {  
+            span.innerHTML = `Total click : ${chkval++}`;
+        });
+
+        function clickbtn() {
+            console.log("11111");
+        }
+    </script>
+</body>
+</html>
