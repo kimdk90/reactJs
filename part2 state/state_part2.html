@@ -16,10 +16,12 @@
 <body>
     <div id="root"></div>
     
-    <!-- 좋지 않은 랜더링-->
+    <!--state를 이용한 랜더링-->
     <script type="text/babel">
         const root = document.getElementById("root");
 
+        
+            
         function App() {
             const [counter, setCounter] = React.useState(0);
             const onClick = () => {
